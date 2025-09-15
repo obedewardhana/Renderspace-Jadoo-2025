@@ -4,14 +4,7 @@
 Use [git](https://git-scm.com/) to clone the project.
 
 ```bash
-git clone https://github.com/obedewardhana/KIBAID-2022.git
-```
-Enter the project.
-```bash
-Use [npm](https://www.npmjs.com/) to install dependencies.
-```
-```bash
-npm i
+git clone https://github.com/obedewardhana/Renderspace-Jadoo-2025.git
 ```
 
 
