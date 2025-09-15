@@ -266,11 +266,10 @@ body {
 /* Partners Section */
 .partners-section {
   background: #fff;
-  padding: 0 0 100px;
 }
 
 .partners-logos {
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .partner-logo {
