@@ -122,6 +122,9 @@ body {
   color: var(--primary-color);
   opacity: 0.7;
   animation: float 6s ease-in-out infinite;
+  width: 155px;
+  left: 55vw;
+  top: 190px !important;
 }
 
 .decoration-plane-1 {
@@ -480,8 +483,12 @@ body {
 @media (max-width: 1024px) {
 
   .hero-section {
-    height: 800px;
-    min-height: unset !important;
+    height: unset!important;
+    min-height: 800px !important;
+  }
+
+  .hero-image{
+    max-height: 500px;
   }
 
 }
@@ -490,7 +497,7 @@ body {
 
   .hero-section {
     text-align: center;
-    padding: 400px 0 50px;
+    padding: 120px 0 50px;
     margin-top: 100px;
   }
 
