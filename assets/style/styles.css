@@ -1,0 +1,627 @@
+/* Custom CSS for Jadoo Travel Landing Page */
+
+:root {
+  --primary-color: #DF6951;
+  --navy-color: #181E4B;
+  --secondary-color: #5E6282;
+  --dark-color: #212529;
+  --light-color: #f8f9fa;
+  --danger-color: #dc3545;
+  --radius-5: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: var(--dark-color);
+  overflow-x: hidden;
+}
+
+/* Navigation Styles */
+.navbar {
+  transition: all 0.3s ease;
+  padding: 1rem 0;
+}
+
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+}
+
+.navbar-brand {
+  color: var(--dark-color) !important;
+  font-weight: 800;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: #212832;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #ff7b00;
+}
+
+.image-logo {
+  height: 30px;
+  width: auto;
+}
+
+.radius-5 {
+  border-radius: var(--radius-5) !important;
+}
+
+/* Hero Section */
+.hero-section {
+  background-image: url('../images/Decore.png');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: top right;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-image-container {
+  position: relative;
+}
+
+.hero-image {
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+  transform: translateY(-10px);
+}
+
+.hero-decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.title-serif {
+  font-family: 'Volkhov', serif;
+  color: var(--navy-color);
+  letter-spacing: -2px;
+}
+
+.title-orange {
+  color: var(--primary-color);
+}
+
+.decoration-plane-1,
+.decoration-plane-2,
+.decoration-plane-3 {
+  position: absolute;
+  font-size: 2rem;
+  color: var(--primary-color);
+  opacity: 0.7;
+  animation: float 6s ease-in-out infinite;
+}
+
+.decoration-plane-1 {
+  top: 20%;
+  right: 15%;
+  animation-delay: 0s;
+}
+
+.decoration-plane-2 {
+  top: 60%;
+  right: 25%;
+  animation-delay: 2s;
+}
+
+.decoration-plane-3 {
+  top: 40%;
+  right: 5%;
+  animation-delay: 4s;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-20px) rotate(10deg);
+  }
+}
+
+/* Destinations Section */
+.destinations-section {
+  background: #fff;
+  padding: 0 0 100px;
+  position: relative;
+}
+
+.destination-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.destination-card-wrapper {
+  position: relative;
+  z-index: 3;
+}
+
+.destination-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.destination-card .card-image {
+  overflow: hidden;
+  height: 330px;
+}
+
+.destination-card .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.destination-card:hover .card-image img {
+  transform: scale(1.1);
+}
+
+.destination-card .card-content {
+  padding: 1.5rem;
+}
+
+.destination-card .price {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+/* Booking Section */
+.booking-section {
+  background: #fff;
+  padding: 100px 0;
+}
+
+.step-item {
+  margin-bottom: 2rem;
+}
+
+.step-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.booking-card {
+  position: relative;
+}
+
+.booking-card img {
+  position: absolute;
+}
+
+.booking-card img:nth-child(2) {
+  left: 40%;
+  top: 40%;
+  width: 80%;
+  z-index: 3;
+}
+
+.booking-card img:nth-child(1) {
+  position: relative;
+  margin-top: 25px;
+  z-index: 2;
+}
+
+.booking-card img:nth-child(3) {
+  position: absolute;
+  z-index: 1;
+  top: -30%;
+  left: 20%;
+}
+
+.booking-card img {
+  transition: transform 0.3s ease;
+}
+
+.booking-card:hover img {
+  transform: translateY(-5px);
+}
+
+/* Partners Section */
+.partners-section {
+  background: #fff;
+  padding: 0 0 100px;
+}
+
+.partners-logos {
+  gap: 2rem;
+}
+
+.partner-logo {
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  height: 130px;
+  width: 130px;
+  object-fit: contain;
+  filter: saturate(0);
+}
+
+.partner-logo:hover {
+  opacity: 1;
+  filter: saturate(1);
+}
+
+/* Subscribe Section */
+.subscribe-section {
+  padding: 100px 0;
+}
+
+.subscribe-container {
+  background: url('../images/bg-subscribe.png');
+}
+
+.subscribe-container {
+  background: url(../images/bg-subscribe.png);
+  background-position: top;
+  background-size: cover;
+  height: 400px;
+  background-repeat: no-repeat;
+  border-top-left-radius: 50px;
+  overflow: hidden;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 50px 30px;
+}
+
+.subscribe-form .form-control {
+  border: none;
+  border-radius: 10px;
+  padding: 15px 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.subscribe-form .form-control:focus {
+  border: 1px solid var(--primary-color);
+}
+
+.subscribe-form .btn {
+  border-radius: 10px;
+  padding: 15px 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.subscribe-form .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(255, 193, 7, 0.4);
+}
+
+/* Footer */
+.footer-section {
+  background: var(--light-color);
+}
+
+.footer-section a {
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: var(--primary-color) !important;
+}
+
+.social-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.social-links a:hover {
+  background: var(--primary-color);
+  color: #fff !important;
+  transform: translateY(-3px);
+}
+
+/* Form Validation Styles */
+.error {
+  color: var(--danger-color);
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.form-control.error {
+  border-color: var(--danger-color);
+  box-shadow: 0 5px 20px rgba(220, 53, 69, 0.2);
+}
+
+/* Steps */
+
+.button-radius {
+  background: #DF6951;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s ease;
+}
+
+.button-radius img {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.btn-yellow {
+  border-radius: 10px !important;
+  font-size: 14px !important;
+  color: #fff !important;
+  background-color: #F1A501;
+  padding: 12px 20px;
+  transition: .3s ease;
+}
+
+.btn-yellow:hover {
+  background-color: #F1A501;
+  box-shadow: 0px 20px 35px 0px #f1a50157 !important;
+}
+
+.btn-orange {
+  border-radius: 10px !important;
+  font-size: 14px !important;
+  color: #fff !important;
+  background-color: #FF7D68;
+  padding: 12px 20px;
+  transition: .3s ease;
+}
+
+.btn-orange:hover {
+  background-color: #FF7D68;
+  box-shadow: 0px 15px 30px 0px #DF69514D !important;
+}
+
+.btn-play {
+  text-decoration: unset;
+  overflow: unset !important;
+}
+
+.button-radius:hover {
+  box-shadow: 0px 15px 30px 0px #DF69514D;
+}
+
+.image-step-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  object-position: top;
+}
+
+.spiral-deco {
+  position: absolute;
+  bottom: 120px;
+  width: 90px;
+  right: 30px;
+  right: -30px;
+  z-index: -1;
+}
+
+.spiral-deco img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  .destination-card .card-image {
+    height: 250px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hamburger {
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #F1A501;
+    margin: 3px 0;
+    transition: 0.3s;
+  }
+
+  .scrolled .hamburger span {
+    background: #F1A501;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg);
+    margin-bottom: -20px;
+  }
+
+  .hamburger.active span:nth-child(2) {
+    transform: rotate(-45deg);
+    margin-top: 17px;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    width: 0;
+  }
+
+  .hamburger.active {
+    margin-top: 10px;
+  }
+
+  .navbar {
+    background-color: #ffffff;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 60px;
+    flex-direction: column;
+    /* background: rgba(255, 255, 255, 0.9); */
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    padding: 2rem 0;
+    height: calc(100vh - 60px);
+    width: 50%;
+    align-items: start;
+    padding-left: 15px !important;
+  }
+
+  .nav-menu.active {
+    background-color: #ffffff;
+    left: 0;
+    height: 100vh;
+    width: 80%;
+  }
+
+  .nav-link {
+    color: #212832 !important;
+  }
+
+  .hero-section {
+    text-align: center;
+    padding: 100px 0 50px;
+  }
+
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .destinations-section,
+  .booking-section,
+  .subscribe-section {
+    padding: 60px 20px;
+    overflow: hidden;
+  }
+
+  .partners-logos {
+    justify-content: center !important;
+    gap: 1rem;
+  }
+
+  .partner-logo {
+    max-width: 100px;
+  }
+
+  .step-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+
+  .decoration-plane-1,
+  .decoration-plane-2,
+  .decoration-plane-3 {
+    display: none;
+  }
+
+  .partner-logo {
+    height: 55px;
+    width: 80px;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .display-5 {
+    font-size: 1.75rem;
+  }
+
+  .subscribe-form .row>div {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Loading Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #dc3545;
+}
