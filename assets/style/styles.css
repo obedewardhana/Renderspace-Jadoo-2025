@@ -479,6 +479,16 @@ body {
   bottom: -40px;
 }
 
+select.form-select:focus {
+    box-shadow: unset;
+    border: unset;
+}
+
+select.form-select {
+    background-color: transparent;
+    border: transparent;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
 
