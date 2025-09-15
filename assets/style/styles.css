@@ -302,7 +302,7 @@ body {
   background: url(../images/bg-subscribe.png);
   background-position: top;
   background-size: cover;
-  height: 400px;
+  min-height: 400px;
   background-repeat: no-repeat;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 30px;
