@@ -290,6 +290,7 @@ body {
 /* Subscribe Section */
 .subscribe-section {
   padding: 100px 0;
+  position: relative;
 }
 
 .subscribe-container {
@@ -454,6 +455,16 @@ body {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.image-arrow-subscribe {
+  width: 60px;
+  height: 60px;
+  display: block;
+  position: absolute;
+  right: 70px;
+  object-fit: contain;
+  top: 30px;
 }
 
 /* Responsive Design */
